@@ -10,6 +10,33 @@ Once you have gotten a hold of the file make sure to copy it over inside a folde
 
 After moving it here open up VMWare Workstation and instead of selecting a pre-existing VM or creating a new one select <b>Open a Virtual Machine<b> and go to the location you previously placed the UAV_Autonomy_20 Virtual Machine.
 
+NOTE: if your computer does not have as much RAM and or cores in the CPU you may want to limit those in the settings similarly to how you may have before.
+
 It may ask you if you moved or copied the virtual machine and if so select <b>I copied it<b>
 
 After this wait a short while as it loads for the first time on your computer.
+
+After finishing setting up you should end up in the Ubuntu homescreen. please make sure to ignore and or remove any requests to update the virtual machine or Ubuntu.
+
+The first thing we can do here is open Qground control and make sure it is working. You can do this by double-clicking the Qgroundcontrol.AppImaghe file on the home screen. If it gives you a black screen with some lines of commands to enter into the terminal open a terminal using:
+
+<pre>CTRL-ALT-T<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
