@@ -1,6 +1,6 @@
 # Ubuntu-vm-set-up
 
-A video going over all of this will be made available at the following link:
+A video going over all of this will be made available at the following link: https://youtu.be/XYQWWVdAEBw
 
 Make sure you source the Virtual machine from either Josh Wile or some other method of availability
 
