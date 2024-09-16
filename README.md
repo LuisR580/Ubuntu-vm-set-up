@@ -22,7 +22,11 @@ The first thing we can do here is open Qground control and make sure it is worki
 
 <pre>CTRL-ALT-T<pre>
 
+This should open up a terminal window Where you can paste the following lines and press enter.
+<pre>sudo usermod -a -G dialout $USER
+sudo apt-get remove modemmanager<pre>
 
+After doing this press Y to continue if needed and if not then just wait for it to finish. It is finished when it returns you back to an empty line that only has the green and blue text.
 
 
 
