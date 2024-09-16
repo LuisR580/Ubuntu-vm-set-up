@@ -22,13 +22,22 @@ The first thing we can do here is open Qground control and make sure it is worki
 
 <pre>CTRL-ALT-T</pre>
 
-This should open up a terminal window Where you can paste the following lines and press enter.
+This should open up a terminal window Where you can paste the following lines and press enter. This can be done by pressing CTRL-SHIFT-V
 <pre>sudo usermod -a -G dialout $USER
 sudo apt-get remove modemmanager</pre>
 
 After doing this press Y to continue if needed and if not then just wait for it to finish. It is finished when it returns you back to an empty line that only has the green and blue text.
 
+Then close Qground control and click on it again to open. It should now work as intended.
 
+Qground control will mostly be used to monitor any real and or simulated drone.
+
+Next to actually start using a simulated drone open a new terminal as we did before and type the following:
+<pre>cd Desktop/PX4-Autopilot/</pre>
+
+This command makes it so we change directories in the files and then use a command to run the SITL Gazebo simulation.
+
+Choose one of the vehicles from this link: [link](https://docs.px4.io/v1.12/en/simulation/gazebo.html#set_world_location\)
 
 
 
