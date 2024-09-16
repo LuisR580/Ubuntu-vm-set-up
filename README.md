@@ -37,7 +37,7 @@ Next to actually start using a simulated drone open a new terminal as we did bef
 
 This command makes it so we change directories in the files and then use a command to run the SITL Gazebo simulation.
 
-Choose one of the vehicles from this link: [link](https://docs.px4.io/v1.12/en/simulation/gazebo.html#set_world_location\)
+Choose one of the vehicles from this link: https://docs.px4.io/v1.12/en/simulation/gazebo.html#set_world_location\
 
 
 
