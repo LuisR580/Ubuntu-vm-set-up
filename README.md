@@ -2,7 +2,7 @@
 
 A video going over all of this will be made available at the following link: https://youtu.be/XYQWWVdAEBw
 
-Make sure you source the Virtual machine from either Josh Wile or some other method of availability
+Make sure you source the Virtual machine from either Josh Wille or some other method of availability
 
 The Folder containing all the files should be named UAV_Autonomy_20
 
