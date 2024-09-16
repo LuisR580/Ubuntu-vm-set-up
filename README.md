@@ -1,5 +1,7 @@
 # Ubuntu-vm-set-up
 
+A video going over all of this will be made available at the following link:
+
 Make sure you source the Virtual machine from either Josh Wile or some other method of availability
 
 The Folder containing all the files should be named UAV_Autonomy_20
@@ -39,17 +41,62 @@ This command makes it so we change directories in the files and then use a comma
 
 Choose one of the vehicles from this link: https://docs.px4.io/v1.12/en/simulation/gazebo.html#set_world_location\
 
+Copy and paste on of the commands used there and before pasting it into the terminal make sure to add "sudo" in front of it for example:
 
+<pre>sudo make px4_sitl gazebo_standard_vtol</pre>
 
+This should open a gazebo window and show the vehicle you attempted to open. The vehicle should automatically connect to Qgroundcontrol and its data should be viewable there.
 
+While this is all great we can also control the vehicle using MAVSDK scripts by opening a new terminal and typing the following:
 
+<pre>cd Desktop/MAVSDK/examples
+ls</pre>
 
+By typing ls we can see a list of the files and folders in this section of the directory and can take a look at the various examples we can use. Because we want to test waypoint travel the best option might be fly_mission. Unfortunately, there can be problems using the VTOL Vehicle for this example so it be best to use another like the Typhoon H480.
 
+<pre> cd fly_mission
+  ls
+</pre>
 
+if we can see that there is no folder named "build" we must create it using:
 
+<pre>mkdir build</pre>
 
+then ls again to make sure it was made correctly and cd build to be placed inside the folder. you can ls again to see that the folder is currently empty as we just made it.
 
+since the folder did not exist the other files needed to run the example did not exist either therefore type
+<pre>cmake ..</pre>
 
+then 
 
+<pre>make</pre>
 
+to make those files needed to run the example
 
+to actually run the example type:
+
+<pre>./fly_mission udp://:14540</pre>
+
+if you are running another exaple you can replace the fly_mission part with  the name of the example you are doing and it should work.
+
+the terminal will tell you messages about what is taking place and in gazebo, you should see your drone and or vehicle moving to the waypoints.
+
+to actually see the code that is doing this example you must wait for the exxample to finish or kill the example by typing CTRL-c in the terminal you ran the example.
+
+Then you must go back a directory by typing:
+
+<pre>cd ..</pre>
+
+and then typing
+
+<pre>code .</pre>
+
+and this will open Visual Studio Code in the file directory you are currently in.
+
+Click on the .cpp file shown in the lefthand bar and the code is easily accessible to mess with.
+
+if you want to change something edit the file in any way you want in VSCode then save the fle in the top left-hand corner and return to the terminal you were previously using.
+
+cd back into the build folder and type "make" again in order to save and build the changes. then run the example again as before and see your changes take place.
+
+This should be all for this intro to the virtual machine and its contents and if any help is needed or probles come up following this feel free to message me (Luis Rivera) in either the evtol discord or any other method you need.
