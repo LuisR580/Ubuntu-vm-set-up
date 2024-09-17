@@ -99,6 +99,8 @@ if you want to change something edit the file in any way you want in VSCode then
 
 cd back into the build folder and type "make" again in order to save and build the changes. then run the example again as before and see your changes take place.
 
+Note: if a password is ever needed while using UAV_Autonomy_20 use the password: "password"
+
 This should be all for this intro to the virtual machine and its contents and if any help is needed or probles come up following this feel free to message me (Luis Rivera) in either the evtol discord or any other method you need.
 
 for later : src/modules/simulation/simulator_mavlink/sitl_targets_gazebo.cmake
